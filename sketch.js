@@ -29,11 +29,11 @@ function draw(){
     ellipse(x,200,100,100);
     
     //this code is going to get the cirle to movew on its own
-    if(x=width || x<0){
+    if(x>width || x<0){
         console.log("CIRLCE IS OFF THE SCREEN!!!!")
         speed = speed * -1;
     }
     
-    x = x - speed;
+    x = x + speed;
     console.log(x);
 }
